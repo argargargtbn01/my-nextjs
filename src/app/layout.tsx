@@ -1,3 +1,5 @@
+'use client'
+import AppHeader from '../components/AppHeader'
 export default function RootLayout({
     children,
   }: {
@@ -6,9 +8,8 @@ export default function RootLayout({
     return (
       <html lang="en">
         <body>
-          <header>header</header>
+          <AppHeader/>
           {children}</body>
-          <footer>footer</footer>
       </html>
     )
   }

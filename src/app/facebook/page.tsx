@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 export default function Facebook(){
     const router = useRouter();
     const handleBtn = () => {
-        router.push('/admin');
+        router.push('/');
     }
     return <div>
         facebook
