@@ -5,12 +5,11 @@ import Link from "next/link";
 import { useEffect } from "react";
 import useSWR from "swr";
 import axios from 'axios';
-import useSWRImmutable from 'swr/immutable'
 
 export default function Page() {
   const fetcher = (url : string) => axios.get(url).then(res => res.data)
 
-  const {data,error,isLoading} = useSWRImmutable("http://localhost:8000/blogs",fetcher, {
+  const {data,error,isLoading} = useSWR("http://localhost:8000/blogs",fetcher, {
   });
   console.log(data)
   if (!data) {

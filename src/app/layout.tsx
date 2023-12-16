@@ -1,5 +1,5 @@
-'use client'
-import AppHeader from '../components/AppHeader'
+import AppHeader from "@/components/AppHeader"
+
 export default function RootLayout({
     children,
   }: {
@@ -10,6 +10,7 @@ export default function RootLayout({
         <body>
           <AppHeader/>
           {children}</body>
+          <footer>footer</footer>
       </html>
     )
   }
